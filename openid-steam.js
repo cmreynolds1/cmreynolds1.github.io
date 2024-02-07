@@ -8,9 +8,9 @@ const app = express();
 app.use(passport.initialize());
 
 passport.use(new SteamStrategy({
-    returnURL: 'http://localhost:3000/auth/steam/return',
-    realm: 'http://localhost:3000/',
-    apiKey: 'your_steam_api_key'
+    returnURL: 'https://cmreynolds1.github.io/:3000/auth/steam/return',
+    realm: 'https://cmreynolds1.github.io/:3000/',
+    apiKey: '9E20260FB398E3A01FCB284357ADAC97'
   },
   function(identifier, profile, done) {
     // Use the Steam ID or profile information as needed
@@ -43,5 +43,5 @@ app.get('/', (req, res) => {
 // Start the server
 const port = 3000;
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on https://cmreynolds1.github.io/:${port}`);
 });
