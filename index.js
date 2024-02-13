@@ -43,7 +43,7 @@ window.onclick = function (event) {
 
 //------------------------------------
 //Show games function
-function show(status) {
+export function show(status) {
     var allRows = document.querySelectorAll('.game-row');
     var gamesContainer = document.querySelector('#games-list tbody');
     var firstGameRow = gamesContainer.querySelector('.game-row');
