@@ -60,7 +60,7 @@ export function show(status) {
     matchingRows.forEach(function (row) {
         row.classList.remove('hidden');
     });
-    updateGameNumbers();
+    // updateGameNumbers();
 }
 
 //-----------------------------
